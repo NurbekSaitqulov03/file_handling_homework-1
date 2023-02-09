@@ -8,6 +8,10 @@ def main(data:str):
     """
     f = open(data, 'r')
     x = f.read()
-    return x
+    a = x.split(',')
+    b = []
+    for i in a:
+        b.append(int(i))
+    return b
 # Read data from file
 print(main('txt_file/data01.txt'))
